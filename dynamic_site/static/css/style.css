@@ -1,0 +1,378 @@
+﻿/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #003366;  /* Adjust color */
+    padding: 40px 0;
+    position: relative;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: last baseline;
+}
+
+.navbar .logo a {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;  
+}
+
+.navbar .menu li {
+    display: inline-block;
+}
+
+.navbar .menu a {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navbar .menu a:hover {
+    background-color: #649ef5;  /* Hover background */
+    border-radius: 3px;  /* Optional: Add rounded corners */
+}
+
+
+
+/* Carousel Styling */
+.carousel-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add background overlay */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1200x500');
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    text-align:center;
+}
+
+.get-started-btn {
+    padding: 10px 15px 10px; /* Increase size */
+    font-size: 18px;
+    margin-top: 50px; /* Add space below the paragraph */
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.get-started-btn:hover {
+    background-color: #ffffff; /* Darken on hover */
+}
+
+
+.welcome-section p {
+    margin-bottom:90px; /* Space below the paragraph */
+}
+
+.welcome {
+    text-align: center;
+    padding: 120px 0;
+}
+
+
+
+.welcome h2 {
+    font-size: 50px;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom:30px;
+    text-decoration: underline;
+}
+
+
+.welcome-section p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.welcome-section .btn {
+    margin: 80px 0; /* Add space between buttons and paragraph */
+    padding: 30px 60px; /* Increase button size */
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #003366; /* Blue background for the sections */
+    padding: 120px;
+}
+
+.our-mission-section {
+    text-align: center;
+    color: #000; /* Black text */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.our-mission-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+
+.feature-box {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px; /* Spacing between boxes */
+}
+
+.feature-box i {
+    font-size: 50px; /* Adjust icon size */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.feature-box h3,
+.feature-box p {
+    margin: 0;
+}
+
+
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-item {
+    width: 30%;
+    background-color: #aaaaaa;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for the circle icons */
+.icon-circle {
+    background-color: white;
+    border: 2px solid #003366; /* Blue border */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #003366; 
+}
+
+/* Add hover effect for icons */
+.service-item:hover .icon-circle {
+    background-color: #003366;
+}
+
+.service-item:hover .service-icon {
+    color: white;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+
+
+/* Portfolio */
+.portfolio-section {
+    padding: 60px 0;
+}
+
+.portfolio-section .section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-section h2 {
+    font-size: 28px;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.portfolio-section p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;  
+    height: auto; 
+    max-height: 500px; 
+
+}
+/* Statistics */
+.statistics {
+    background-color: #003366;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    text-align: center;
+    text-size-adjust: 40;
+}
+
+.stat-item {
+    width: 20%;
+}
+.statistics {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.statistics .stat-item {
+    display: inline-block;
+    margin: 20px;
+}
+
+.statistics .stat-item i {
+    font-size: 40px; /* Icon size */
+    color: #003366;  /* Icon color */
+    margin-bottom: 10px;
+}
+
+.statistics h3 {
+    font-size: 48px;  /* Increase number size */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.statistics p {
+    font-size: 18px;  /* Increase text size */
+    color: #ffffff;
+}
+
+
+.footer {
+    background-color: #003366;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    color: #ffdf00;
+}

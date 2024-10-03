@@ -1,0 +1,323 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website</title>
+    <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#heroCarousel">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#portfolio">Our Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('{% static "images/CR_01.png" %}');">
+                <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
+                    <div>
+                        <h1>WEB DEVELOPMENT</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                             Lorem Ipsum has been the industry's 
+                             standard dummy text ever since the 1500s</p>
+                        <a href="#get-started" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item" style="background-image: url('{% static "images/5.png" %}');">
+                <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
+                    <div>
+                        <h1>WEB DEVELOPMENT</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            Lorem Ipsum has been the industry's 
+                            standard dummy text ever since the 1500s</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="carousel-item" style="background-image: url('{% static "images/6.png" %}');">
+            <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
+                <div>
+                    <h1>DESKTOP APPLICATION</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                        Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s</p>
+                   
+                </div>
+            </div>
+        </div>
+
+
+            <div class="carousel-item" style="background-image: url('{% static "images/7.png" %}');">
+                <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
+                    <div>
+                        <h1>APPS DEVELOPMENT</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            Lorem Ipsum has been the industry's 
+                            standard dummy text ever since the 1500s</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+
+    
+
+
+    <section class="welcome" style="background-color: white;">
+        <h2 style="color: #003366; font-weight: bold; text-decoration: underline;">Welcome to Our Website</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+             when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+           It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+           essentially unchangedItLorem Ipsum is simply dummy text of the printing and typesetting industry.
+           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+          essentially unchangedItLorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+           when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+         It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+         essentially unchangedItLorem Ipsum is simply dummy text of the printing and typesetting industry.
+         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+        essentially unchangedIt</p>
+        <a href="#" class="read-more" style="display: inline-block; padding: 10px 20px; background-color: #003366; color: white; text-decoration: none; border-radius: 5px;">Read Me</a>
+    </section>
+    
+
+    <section class="features">
+    <div class="feature-box story">
+        <i class="fas fa-book" style="color: white;"></i>
+        <h3 style="color: white;">Our Story</h3>
+        <p style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+    </div>
+    <div class="feature-box mission">
+        <i class="fas fa-bullseye" style="color: white;"></i>
+        <h3 style="color: white;">Our Mission</h3>
+        <p style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+             when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+    </div>
+    <div class="feature-box vision">
+        <i class="fas fa-eye" style="color: white;"></i>
+        <h3 style="color: white;">Our Vision</h3>
+        <p style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+             when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+    </div>
+</section>
+
+    
+
+    <section class="services">
+        <h2 style="color: #003366; font-weight: bold; text-decoration: underline;">Our Services</h2>    
+        <div class="service-grid">
+            
+            <div class="service-item">
+                <div class="icon-circle">
+                    <i class="fas fa-code service-icon"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="icon-circle">
+                    <i class="fas fa-pencil-ruler service-icon"></i>
+                </div>
+                <h3>Theme Development</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+            </div>
+    
+            <div class="service-item">
+                <div class="icon-circle">
+                    <i class="fas fa-laptop service-icon"></i>
+                </div>
+                <h3>Web Design</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="icon-circle">
+                    <i class="fas fa-gamepad service-icon"></i>
+                </div>
+                <h3>Game Development</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="icon-circle">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                </div>
+                <h3>Apps Development</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="icon-circle">
+                    <i class="fas fa-desktop service-icon"></i>
+                </div>
+                <h3>Desktop Application</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="icon-circle">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                </div>
+                <h3>WordPress Themes</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="icon-circle">
+                    <i class="fas fa-plug service-icon"></i>
+                </div>
+                <h3>WordPress Plugins</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="icon-circle">
+                    <i class="fas fa-headset service-icon"></i>
+                </div>
+                <h3>Support & IT</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="statistics">
+        <div class="stat-item">
+            <div class="icon-circle">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h3>12+</h3>
+            <p>Years of Experience</p>
+        </div>
+        <div class="stat-item">
+            <div class="icon-circle">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>999+</h3>
+            <p>Completed Projects</p>
+        </div>
+        <div class="stat-item">
+            <div class="icon-circle">
+                <i class="fas fa-users"></i>
+            </div>
+            <h3>480+</h3>
+            <p>Total Clients</p>
+        </div>
+        <div class="stat-item">
+            <div class="icon-circle">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <h3>15+</h3>
+            <p>Awards Won</p>
+        </div>
+    </section>
+    
+    
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: #003366; font-weight: bold; text-decoration: underline;">Our Portfolio</h2>
+                <p>Check out our latest work</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 portfolio-item">
+                    <img src="{% static 'images/CR_01.png' %}" class="img-fluid" alt="Portfolio 1">
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item">
+                    <img src="{% static 'images/1.png' %}" class="img-fluid" alt="Portfolio 2">
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item">
+                    <img src="{% static 'images/2.png' %}" class="img-fluid" alt="Portfolio 3">
+                </div>
+                <div class="col-lg-3 col-md-6 portfolio-item">
+                    <img src="{% static 'images/3.png' %}" class="img-fluid" alt="Portfolio 4">
+                </div>
+
+                <div class="col-lg-3 col-md-6 portfolio-item">
+                    <img src="{% static 'images/4.png' %}" class="img-fluid" alt="Portfolio 4">
+                </div>
+
+                <div class="col-lg-3 col-md-6 portfolio-item">
+                    <img src="{% static 'images/5.png' %}" class="img-fluid" alt="Portfolio 4">
+                </div>
+
+                <div class="col-lg-3 col-md-6 portfolio-item">
+                    <img src="{% static 'images/6.png' %}" class="img-fluid" alt="Portfolio 4">
+                </div>
+
+                <div class="col-lg-3 col-md-6 portfolio-item">
+                    <img src="{% static 'images/7.png' %}" class="img-fluid" alt="Portfolio 4">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>© 2024 Your Company. All Rights Reserved.</p>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
