@@ -33,6 +33,9 @@
         </nav>
     </header>
 
+    
+    
+
     <div id="heroCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" style="background-image: url('{% static "images/CR_01.png" %}');">
@@ -334,6 +337,17 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggle = document.querySelector('.navbar-toggle'); // Select the toggle button
+        const menu = document.getElementById('navbar-menu'); // Select the menu
+        
+        navbarToggle.addEventListener('click', function() {
+            menu.classList.toggle('active'); // Toggle the 'active' class on the menu
+        });
+    });
+</script>
 
 </body>
 </html>

@@ -36,9 +36,10 @@ ul {
 .navbar .container {
     display: flex;
     justify-content: space-between; 
-    align-items: last baseline;
+    align-items: center; /* Correct alignment */
 }
 
+/* Logo Style (optional if you have a logo) */
 .navbar .logo a {
     color: #ffffff;
     font-size: 24px;
@@ -48,7 +49,7 @@ ul {
 
 .navbar .menu {
     list-style: none;
-    display: inline-flex;
+    display: flex; /* Use flex for horizontal alignment */
     gap: 30px;  
 }
 
@@ -68,6 +69,50 @@ ul {
 .navbar .menu a:hover {
     background-color: #649ef5;  /* Hover background */
     border-radius: 3px;  /* Optional: Add rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .navbar .menu {
+        gap: 20px; /* Reduce the gap for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column; /* Stack logo and menu vertically */
+        align-items: center; /* Center align on smaller screens */
+    }
+
+    .navbar .menu {
+        flex-direction: column; /* Vertical layout for menu */
+        gap: 15px; /* Adjust gap for small screens */
+    }
+
+    .navbar .menu li {
+        width: 100%; /* Full width for each item */
+        text-align: center; /* Center menu items */
+    }
+
+    .navbar .menu a {
+        padding: 15px 20px; /* Increase padding for better touch targets */
+        width: 100%; /* Full-width for easier clicks on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 20px 0; /* Reduce navbar padding for very small screens */
+    }
+
+    .navbar .logo a {
+        font-size: 20px; /* Decrease logo size */
+    }
+
+    .navbar .menu a {
+        font-size: 14px; /* Decrease font size for smaller screens */
+        padding: 10px 15px; /* Adjust padding */
+    }
 }
 
 
@@ -289,6 +334,17 @@ ul {
     font-size: 16px;
     color: #000000;
     
+}
+@media (max-width: 768px) {
+    .service-item {
+        width: calc(50% - 40px); /* Adjust width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        width: calc(100% - 40px); /* Full width for mobile */
+    }
 }
 
 
